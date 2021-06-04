@@ -2,7 +2,7 @@ class Creature {
     done = false
     fitness = 0
     genes = []
-    maxSpeed = 5
+    maxSpeed = 2
 
     constructor(x, y, geneLength) {
         this.pos = createVector(x, y)

@@ -2,15 +2,15 @@ let creatures = []
 let generation = 1
 let geneIndex = 1
 let geneLength = 250
-let mutationRate = 0.05
+let mutationRate = 0.01
 let populationCount = 100
 let goal, spawn
 
 function setup() {
-    createCanvas(800, 800)
+    createCanvas(500, 500)
 
     spawn = createVector(width / 2, 100)
-    goal = new Goal(width / 2 - 16, 700, 32, 32)
+    goal = new Goal(width / 2 - 16, height - 100, 32, 32)
 
     for(let i = 0; i < populationCount; i++) {
         creatures.push(new Creature(spawn.x, spawn.y, geneLength))
